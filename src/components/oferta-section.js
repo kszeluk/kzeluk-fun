@@ -15,25 +15,26 @@ export const OfertaSection = () => {
         title="Poznaj szczegóły oferty rehabilitacji"
       />
       <div className="xl:px-4">
-        <ScrollAnimation animateIn="zoomIn">
           <div className="block lg:flex justify-between md:-mx-2 px-16">
             <CrookedTile 
               title="STANY POURAZOWE"
               description="Rehabilitacja po urazach ma na celu odzyskanie sprawności sprzed wypadku."
               img={pourazowe}
+              delay={0}
             />
             <CrookedTile
               title="BÓLE KRĘGOSŁUPA"
               description="Przeciążony kręgosłup wysyła więcej sygnałów..."
               img={kregoslup}
+              delay={200}
             />
             <CrookedTile
               title="CHOROBY REUMATYCZNE"
               description="Objawiają się zmianami w obrębie stawów i kości, powodując ból."
               img={reum}
+              delay={400}
             />
           </div>
-        </ScrollAnimation>
       </div>
     </section>
   );
