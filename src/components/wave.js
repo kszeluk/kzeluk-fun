@@ -8,23 +8,23 @@ export const Wave = () => {
     <>
       <div
         style={{ backgroundColor: "#5bb6e3"}}
-        className="px-10 md:px-20 lg:px-40 w-full flex flex-wrap flex-col md:flex-row items-center"
+        className="flex items-center flex-col-reverse md:flex-row"
       >
-        <div className="flex flex-col w-full flex-1 justify-center items-start text-center md:text-left text-white px-20">
-          <h2 className="my-8 mb-0 text-3xl font-bold leading-tight">Zespół wykwalifikowanych</h2>
-          <h2 className="my-8 mt-0 text-3xl font-bold leading-tight">Fizjoterapeutów</h2>
-          <p class="leading-normal text-l mb-8" style={{ color: "#115379" }}>
+        <div className="flex flex-1 flex-col items-center">
+          <h2 className="m-0">Zespół wykwalifikowanych</h2>
+          <h2 className="mb-8">Fizjoterapeutów</h2>
+          <p style={{ color: "#115379" }}>
             Cały czas poszerzamy swoje kwalifikacje <br /> poprzez specjalistyczne kursy doskonalące.
           </p>
-          <div className="flex justify-around w-full">
-            <a class="mx-auto lg:mx-0 hover:underline bg-white text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#"
+          <div className="my-8">
+            <a className="mx-4 hover:underline bg-white text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#"
               style={{ backgroundColor: "#115379"}}
             >Umów wizytę</a>
-            <a class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#">O nas</a>
+            <a class="mx-4 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#">O nas</a>
           </div>
         </div>
-        <div className="flex-1 m-3">
-          <img src={ burzynscy } style={{ maxHeight: "50vh" }} />
+        <div className="flex-1 md:m-0 my-3">
+          <img src={ burzynscy } style={{ maxHeight: "50vh" }} className="m-0" />
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1440 160">
