@@ -8,10 +8,11 @@ export const Wave = () => {
     <>
       <div
         style={{ backgroundColor: "#5bb6e3"}}
-        className="px-3 w-full flex flex-wrap flex-col md:flex-row items-center"
+        className="px-10 md:px-20 lg:px-40 w-full flex flex-wrap flex-col md:flex-row items-center"
       >
-        <div className="flex flex-col w-full flex-1 justify-center items-start text-center md:text-left text-white px-12">
-          <h2 className="my-8 text-3xl font-bold leading-tight"> Zespół wykwalifikowanych Fizjoterapeutów</h2>
+        <div className="flex flex-col w-full flex-1 justify-center items-start text-center md:text-left text-white px-20">
+          <h2 className="my-8 mb-0 text-3xl font-bold leading-tight">Zespół wykwalifikowanych</h2>
+          <h2 className="my-8 mt-0 text-3xl font-bold leading-tight">Fizjoterapeutów</h2>
           <p class="leading-normal text-l mb-8" style={{ color: "#115379" }}>
             Cały czas poszerzamy swoje kwalifikacje <br /> poprzez specjalistyczne kursy doskonalące.
           </p>
@@ -23,7 +24,7 @@ export const Wave = () => {
           </div>
         </div>
         <div className="flex-1 m-3">
-          <img src={ burzynscy } style={{ height: "40vw" }} />
+          <img src={ burzynscy } style={{ maxHeight: "50vh" }} />
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1440 160">
