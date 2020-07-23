@@ -6,7 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export const PoznajNasSection = () => {
   return (
     <ScrollAnimation animateIn="fadeIn">
-      <section className="bg-white border-b py-8" id="o-nas">
+      <section className="bg-white py-8" id="o-nas">
         <SectionTitle
           title="POZNAJ NAS"
         />

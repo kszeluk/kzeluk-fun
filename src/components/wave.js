@@ -7,7 +7,7 @@ export const Wave = () => {
   return (
     <>
       <div
-        style={{ backgroundColor: "#7cbae6"}}
+        style={{ backgroundColor: "#5bb6e3"}}
         className="flex items-center flex-col-reverse md:flex-row"
       >
         <div className="flex flex-1 flex-col items-center">
