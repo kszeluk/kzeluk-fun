@@ -10,7 +10,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 export const OfertaSection = () => {
   return (
-    <section className="py-8 border-b">
+    <section className="py-8 border-b" id="oferta">
       <SectionTitle
         title="Poznaj szczegóły oferty rehabilitacji"
       />

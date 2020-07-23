@@ -14,7 +14,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 export const MethodSection = () => {
   return (
     <ScrollAnimation animateIn="fadeIn">
-      <section className="bg-gray-100 py-8 border-b">
+      <section className="bg-gray-100 py-8 border-b" id="nasze-metody">
         <h3 className="text-center">NOWOCZESNE METODY REHABILITACJI</h3>
         <div className="px-4 text-gray-800">
           <div className="block md:flex justify-center md:-mx-2 px-12">
