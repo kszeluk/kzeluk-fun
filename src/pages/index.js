@@ -11,7 +11,7 @@ import { BottomWave } from "../components/bottom-wave"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Wave />
     <OfertaSection />
     <MethodSection />

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Centrum Rehabilitacji Bartosz Burzyński`,
+    description: `Proponujemy fizjoterapię, którą przeprowadzamy w profesjonalnym gabinecie oraz w domu pacjenta. Terapia prowadzona jest przez wyspecjalizowanych fizjoterapeutów każdorazowo ma ona charakter kompleksowy oraz indywidualny.`,
+    author: `karol.zeluk@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Centrum Rehabilitacji Bartosz Burzyński`,
+        short_name: `Centrum Reh`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#f1f2f4`,
+        theme_color: `#6b37bf`,
+        display: `standalone`,
+        icon: `src/images/logo2.png`,
+        cache_busting_mode: `none`
       },
     },
     `gatsby-plugin-postcss`,
