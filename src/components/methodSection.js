@@ -1,13 +1,13 @@
 import React from "react";
 import { Card } from "./card";
 
-import elektroterapia from "../images/elektroterapia.webp";
-import ultradzwieki from "../images/ultradzwieki.webp";
-import swiatlo from "../images/terapia-swiatlem.webp";
-import kinesiology from "../images/kinesiology-taping.webp";
-import taping from "../images/taping-sztywny.webp";
-import masaz from "../images/masaz.webp";
-import techniki from "../images/techniki-osteopatyczne.webp";
+import elektroterapia from "../images/elektroterapia.jpg";
+import ultradzwieki from "../images/ultradzwieki.jpg";
+import swiatlo from "../images/terapia-swiatlem.jpg";
+import kinesiology from "../images/kinesiology-taping.jpg";
+import taping from "../images/taping-sztywny.jpg";
+import masaz from "../images/masaz.jpg";
+import techniki from "../images/techniki-osteopatyczne.jpg";
 import logo from "../images/logo.png";
 import ScrollAnimation from "react-animate-on-scroll";
 

@@ -3,10 +3,9 @@ import React from "react";
 import { CrookedTile } from "./crooked-tile"
 import { SectionTitle } from "./SectionTitle"
 
-import pourazowe from "../images/stany-pourazowy.webp";
-import kregoslup from "../images/bole-kregoslupa.webp";
-import reum from "../images/choroby-reumatyczne.webp"
-import ScrollAnimation from "react-animate-on-scroll";
+import pourazowe from "../images/stany-pourazowy.jpg";
+import kregoslup from "../images/bole-kregoslupa.jpg";
+import reum from "../images/choroby-reumatyczne.jpg"
 
 export const OfertaSection = () => {
   return (
