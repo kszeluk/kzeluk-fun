@@ -1,6 +1,9 @@
 import React from "react";
 import { SectionTitle } from "./SectionTitle";
 
+import bartek from "../images/bartosz-burzynski-new.jpg";
+import lila from "../images/lilianna-jaworska-new.jpg";
+
 import ScrollAnimation from "react-animate-on-scroll";
 
 export const PoznajNasSection = () => {
@@ -20,7 +23,7 @@ export const PoznajNasSection = () => {
             </div>
             <div className="w-full sm:w-1/3 p-6  justify-center flex">
               <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
-                <img src="http://www.rehabilitacjaburzynski.pl/images/upload/o-nas/bartosz-burzynski-new.jpg" className="h-full w-full" />
+                <img src={bartek} className="h-full w-full" />
               </div>
             </div>
           </div>
@@ -33,7 +36,7 @@ export const PoznajNasSection = () => {
             </div>
             <div className="w-full sm:w-1/3 p-6 justify-center flex">
               <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
-                <img src="http://www.rehabilitacjaburzynski.pl/images/upload/o-nas/lilianna-jaworska-new.jpg" className="h-full w-full" />
+                <img src={lila} className="h-full w-full" />
               </div>
             </div>
           </div>
