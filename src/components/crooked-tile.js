@@ -12,10 +12,6 @@ export const CrookedTile = ({ img, title, description, delay }) => {
         <div className="p-6 lg:p-3 lg:pr-4 lg:pl-5 lg:py-8 h-full">
           <h4>{ title }</h4>
           <p className="text-gray-600">{ description }</p>
-          <a className="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="">
-            <span>Czytaj więcej</span>
-            <span className="text-xs ml-1">&#x279c;</span>
-          </a>
         </div>
         <svg className="hidden sm:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
           <polygon points="50,0 60,0 50,100 0,100" />

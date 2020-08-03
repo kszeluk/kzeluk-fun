@@ -7,7 +7,9 @@ import { Wave } from "../components/wave"
 import { MethodSection } from "../components/methodSection"
 import { OfertaSection } from "../components/oferta-section"
 import { PoznajNasSection } from "../components/poznajNasSection"
+import { GabinetSection } from "../components/gabinetSection"
 import { BottomWave } from "../components/bottom-wave"
+import { PartnersSection } from "../components/partnerzySection"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +18,8 @@ const IndexPage = () => (
     <OfertaSection />
     <MethodSection />
     <PoznajNasSection />
+    <GabinetSection />
+    <PartnersSection />
     <BottomWave />
   </Layout>
 )

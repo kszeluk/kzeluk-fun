@@ -59,11 +59,7 @@ export const MethodSection = () => {
               description="Osteopatia jest metodą, w której badanie manualne wykorzystywane jest do stawiania diagnozy i leczenia chorych."
               img={techniki}
             />
-            <Card
-              title="OFERTA"
-              description="Poznaj szczegóły naszej oferty."
-              img={logo}
-            />
+            <div className="md:mx-2 mb-4 md:mb-0 flex-1" />
             <div className="md:mx-2 mb-4 md:mb-0 flex-1" />
           </div>
 
