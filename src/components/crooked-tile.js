@@ -10,7 +10,7 @@ export const CrookedTile = ({ img, title, description, delay }) => {
       </div>
       <div className="w-full lg:w-4/7 h-full flex items-center bg-gray-100 rounded-lg">
         <div className="p-6 lg:p-3 lg:pr-4 lg:pl-5 lg:py-8 h-full">
-          <h4>{ title }</h4>
+          <h4 className="text-primary">{ title }</h4>
           <p className="text-gray-600">{ description }</p>
         </div>
         <svg className="hidden sm:block absolute inset-y-0 h-full w-24 fill-current text-gray-100 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">

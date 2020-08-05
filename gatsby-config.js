@@ -22,7 +22,7 @@ module.exports = {
         short_name: `Centrum Reh`,
         start_url: `/`,
         background_color: `#f1f2f4`,
-        theme_color: `#6b37bf`,
+        theme_color: `#1b1f4c`,
         display: `standalone`,
         icon: `src/images/logo2.png`,
         cache_busting_mode: `none`

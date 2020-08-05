@@ -11,16 +11,14 @@ export const Wave = () => {
         className="flex items-center flex-col-reverse md:flex-row"
       >
         <div className="flex flex-1 flex-col items-center">
-          <h2 className="m-0">Zespół wykwalifikowanych</h2>
-          <h2 className="mb-8">Fizjoterapeutów</h2>
-          <p style={{ color: "#115379" }}>
+          <h2 className="m-0 text-primary">Zespół wykwalifikowanych</h2>
+          <h2 className="mb-8 text-primary">Fizjoterapeutów</h2>
+          <p className="text-gray-900">
             Cały czas poszerzamy swoje kwalifikacje <br /> poprzez specjalistyczne kursy doskonalące.
           </p>
           <div className="my-8">
-            <a className="mx-4 hover:underline bg-white text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#"
-              style={{ backgroundColor: "#115379"}}
-            >Umów wizytę</a>
-            <a class="mx-4 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#">O nas</a>
+            <a className="mx-4 hover:underline text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg bg-secondary" href="#kontakt">Umów wizytę</a>
+            <a class="mx-4 hover:underline bg-white text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#o-nas">O nas</a>
           </div>
         </div>
         <div className="flex-1 md:m-0 my-3">

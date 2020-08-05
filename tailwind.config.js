@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       backgroundOpacity: {
         '40': '0.4'
+      },
+      colors: {
+        primary: "#1b1f4c",
+        secondary: "#1e86c8"
       }
     }
   },

@@ -8,12 +8,14 @@ export const Footer = () => {
       <div className="container mx-auto  px-8">
         <div className="w-full flex flex-col md:flex-row py-6">
           <div className="flex-1 mb-6">
-            <a href="#" className="p-1 mr-2 inline-flex items-center">
+            <a href="/" className="p-1 mr-2 inline-flex items-center">
               <img src={logo} alt="logo" style={{ margin: 0 }} />
               <span 
-                className="text-xl text-white font-bold uppercase tracking-wide ml-2"
-                style={{ color: "#488f3c" }}
-              >Centrum Rehabilitacji</span>
+                className="text-xl font-bold uppercase tracking-wide ml-2 hidden sm:inline text-primary"
+              >
+                Centrum 
+                <span className="text-secondary"> Rehabilitacji</span>
+              </span>
             </a>
           </div>
           <div className="flex-1">

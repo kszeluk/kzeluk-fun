@@ -22,11 +22,10 @@ const Header = ({ siteTitle }) => {
         <a href="#" className="p-1 mr-2 inline-flex items-center">
           <img src={logo} alt="logo" style={{ margin: 0, height: "48px" }} />
           <span 
-            className="text-xl font-bold uppercase tracking-wide ml-2 hidden sm:inline"
-            style={{ color: "#1e86c8" }}
+            className="text-xl font-bold uppercase tracking-wide ml-2 hidden sm:inline text-primary"
           >
             Centrum 
-            <span style={{ color: "#1b1f4c"}}> Rehabilitacji</span>
+            <span className="text-secondary"> Rehabilitacji</span>
           </span>
         </a>
         <button
@@ -44,10 +43,9 @@ const Header = ({ siteTitle }) => {
         >
           <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1b1f4c" width="36px" height="36px"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>      </button>
         <div
-          className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto text-primary"
           id="navigation"
           ref={navigation}
-          style={{ color: "1b1f4c" }}
           onClick={() => {
             if (isMenuDisplayed.current) {
               document.getElementById("navigation").style.display = "none";

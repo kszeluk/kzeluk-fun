@@ -9,7 +9,7 @@ export const Card = ({ title, description, img }) => {
         </div>
         <div className="w-2/3 p-4 py-0">
           <h1 className="text-gray-900 font-bold text-lg mb-2">{ title }</h1>
-          <p className="mt-1 text-gray-700 text-sm">{ description }</p>
+          <p className="mt-1 text-gray-600 text-sm">{ description }</p>
         </div>
       </div>
     </div>    
