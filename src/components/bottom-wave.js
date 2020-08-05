@@ -1,5 +1,6 @@
 import React from "react";
 
+import contact from "../images/contact.svg";
 
 export const BottomWave = () => {
   return (
@@ -14,21 +15,23 @@ export const BottomWave = () => {
         className="text-white"
         id="kontakt"
       >
-        <h1 className="text-white text-3xl sm:text-5xl text-center w-full py-8 my-0">Skontaktuj się z nami</h1>
-        <div className="flex flex-col sm:flex-row text-center justify-around pb-4">
-          <div>
-            <h4 className="hidden sm:block">Zadzwoń do nas:</h4>
-            <div className="flex w-full justify-center flex-col items-center sm:flex-row">
+        <h1 className="text-white text-3xl sm:text-5xl text-center w-full py-8 my-0">Kontakt</h1>
+        <div className="flex flex-col md:flex-row text-center justify-around pb-4">
+          <div className="flex-1 md:self-center">
+            <img src={contact} className="m-0 py-8 px-16"/>
+          </div>
+          <div className="flex-1">
+            <div className="flex w-full flex-col items-center sm:flex-row mb-4 justify-center md:justify-start">
               <div className="rounded-full border p-2 mr-3 hidden sm:block">
-                <svg xmlns="https://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <svg xmlns="https://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24" width="32">
                   <path d="M0 0h24v24H0z" fill="none"/>
                   <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" fill="white" />
                 </svg>
               </div>
-              <div className="font-bold m-0 text-xl py-2">
+              <div className="font-bold m-0 text-xl py-3">
                 +48 693 501 822
               </div>
-              <div className="flex sm:hidden justify-center mb-8 mt-2">
+              <div className="flex sm:hidden mb-8 mt-2">
                 <div className="rounded-full border p-2 mr-8">
                   <svg xmlns="https://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px">
                     <path d="M0 0h24v24H0z" fill="none"/>
@@ -42,10 +45,7 @@ export const BottomWave = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div>
-            <h4 className="hidden sm:block">Napisz do nas:</h4>
-            <div className="flex w-full justify-center mb-8 sm:mb-4">
+            <div className="flex w-full mb-8 sm:mb-4 justify-center md:justify-start">
               <div className="rounded-full border p-0 mr-3">
                 <svg xmlns="https://www.w3.org/2000/svg" enable-background="new 0 0 144.083 144" height="48px" version="1.1" viewBox="0 0 144.083 144" width="48px" >
                   <path d="M90.792,36.304H77.596c-0.031,0-0.061,0.001-0.09,0.004c-13.323,0.042-15.063,9.345-15.07,17.476  c-0.018,0.076-0.028,0.154-0.028,0.235v5.708h-9.118c-0.552,0-1,0.448-1,1v14.077c0,0.553,0.448,1,1,1h9.118v30.891  c0,0.553,0.448,1,1,1h13.307c0.553,0,1-0.447,1-1V75.805h13.076c0.553,0,1-0.447,1-1V60.728c0-0.552-0.447-1-1-1H76.715v-7.567  h14.076c0.553,0,1-0.448,1-1V37.304C91.792,36.752,91.344,36.304,90.792,36.304z" fill="white" />
@@ -55,7 +55,7 @@ export const BottomWave = () => {
                 /CentrumRehabilitacjiWroclaw
               </div>
             </div>
-            <div className="flex w-full my-4 justify-center">
+            <div className="flex w-full my-4 justify-center md:justify-start">              
               <div className="rounded-full border p-2 mr-3">
                 <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="32px" height="32px">
                   <path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -64,6 +64,9 @@ export const BottomWave = () => {
               <div className="font-bold m-0 sm:py-2 sm:text-xl py-3 text-l">
                 kontakt@rehabilitacjaburzynski.pl
               </div>
+            </div>
+            <div className="flex w-full my-4 justify-center md:justify-start">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.393002449266!2d17.0430030160317!3d51.11965854679918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9dadf3e2e63%3A0x5d3768611f9acc6b!2sUlica%20Boles%C5%82awa%20Prusa%2038%2C%2050-319%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1596620614926!5m2!1spl!2spl" width="400" height="300" frameborder="0" style={{ border:0 }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
         </div>

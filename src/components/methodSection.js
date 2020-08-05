@@ -17,7 +17,7 @@ export const MethodSection = () => {
       <section className="bg-gray-100 py-8 border-b" id="nasze-metody">
         <h3 className="text-center">NOWOCZESNE METODY REHABILITACJI</h3>
         <div className="px-4 text-gray-800">
-          <div className="block md:flex justify-center md:-mx-2 px-12">
+          <div className="block md:flex justify-center md:-mx-2 px-0 lg:px-12">
             <Card
               title="ELEKTROTERAPIA"
               description="Wireless Professional jest obecnie najbardziej zaawansowanym urządzeniem do elektroterapii."
@@ -35,7 +35,7 @@ export const MethodSection = () => {
             />
           </div>
 
-          <div className="block md:flex justify-center md:-mx-2 px-12">
+          <div className="block md:flex justify-center md:-mx-2 px-0 lg:px-12">
             <Card
               title="KINESOLOGY TAPING"
               description="Kinesiology Taping jest metodą terapii, którą powszechnie stosuje się w wielu dziedzinach medycyny."
@@ -53,7 +53,7 @@ export const MethodSection = () => {
             />
           </div>
 
-          <div className="block md:flex justify-center md:-mx-2 px-12">
+          <div className="block md:flex justify-center md:-mx-2 px-0 lg:px-12">
             <Card
               title="TECHNIKI OSTEOPATYCZNE"
               description="Osteopatia jest metodą, w której badanie manualne wykorzystywane jest do stawiania diagnozy i leczenia chorych."

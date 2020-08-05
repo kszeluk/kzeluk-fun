@@ -14,7 +14,7 @@ export const OfertaSection = () => {
         title="Poznaj szczegóły oferty rehabilitacji"
       />
       <div className="xl:px-4">
-          <div className="block lg:flex justify-between md:-mx-2 px-16">
+          <div className="block lg:flex justify-between md:-mx-2 lg:px-16 px-4">
             <CrookedTile 
               title="STANY POURAZOWE"
               description="Rehabilitacja po urazach ma na celu odzyskanie sprawności sprzed wypadku."
