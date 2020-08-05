@@ -16,11 +16,11 @@ export const BottomWave = () => {
         id="kontakt"
       >
         <h1 className="text-white text-3xl sm:text-5xl text-center w-full py-8 my-0">Kontakt</h1>
-        <div className="flex flex-col md:flex-row text-center justify-around pb-4">
+        <div className="flex flex-col md:flex-row-reverse text-center justify-center pb-4 px-4 container mx-auto">
           <div className="flex-1 md:self-center">
-            <img src={contact} className="m-0 py-8 px-16"/>
+            <img src={contact} className="m-0 py-8 lg:pl-20 pl-4"/>
           </div>
-          <div className="flex-1">
+          <div className="flex-2">
             <div className="flex w-full flex-col items-center sm:flex-row mb-4 justify-center md:justify-start">
               <div className="rounded-full border p-2 mr-3 hidden sm:block">
                 <svg xmlns="https://www.w3.org/2000/svg" height="32" viewBox="0 0 24 24" width="32">
