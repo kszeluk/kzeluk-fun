@@ -18,7 +18,7 @@ export const GabinetSection = () => {
           <span className="text-3xl sm:text-4xl text-right mt-4 font-bold" style={{ color: "#1b1f4c"}}>
             GABINET
           </span>
-          <span className="text-right text-xl flex mt-16 w-3/5 xl:w-1/2 self-end text-gray-800 tracking-wider bg-white sm:bg-transparent bg-opacity-40">
+          <span className="text-right text-xl flex mt-16 w-3/5 xl:w-1/2 self-end text-gray-800 tracking-wider">
             Proponujemy fizjoterapię, którą przeprowadzamy w nowoczesnym i eleganckim gabinecie.
           </span>
         </div>
