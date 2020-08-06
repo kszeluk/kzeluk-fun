@@ -1,14 +1,15 @@
 import React from "react";
-import { SectionTitle } from "./SectionTitle";
-
-import biuro from "../images/biuro.png";
+import Img from "gatsby-background-image";
 
 
-
-export const GabinetSection = () => {
+export const GabinetSection = ({ biuro }) => {
   return (
-    <section className="bg-gray-100 p-8 py-20 flex justify-end xl:pr-16" id="gabinet"
-      style={{ backgroundImage: `url(${biuro})`, backgroundSize: "cover", backgroundPosition: "left" }}
+    <Img
+      className="bg-gray-100 p-8 py-20 flex justify-end xl:pr-16"
+      id="gabinet"
+      fluid={biuro}
+      Tag="section"
+      style={{ backgroundPosition: "left" }}
     >
       <div className="container max-w-3xl mx-auto m-8">
         <div className="flex flex-col justify-between lg:py-8 break-words">
@@ -23,6 +24,6 @@ export const GabinetSection = () => {
           </span>
         </div>
       </div>
-    </section>
+    </Img>
  );
 }

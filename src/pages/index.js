@@ -30,9 +30,18 @@ const IndexPage = ({ data }) => (
       masaz={data.masaz.childImageSharp.fixed}
       techniki={data.techniki.childImageSharp.fixed}
     />
-    <PoznajNasSection />
-    <GabinetSection />
-    <PartnersSection />
+    <PoznajNasSection
+      bartek={data.bartek.childImageSharp.fixed}
+      lila={data.lila.childImageSharp.fixed}    
+    />
+    <GabinetSection
+      biuro={data.gabinet.childImageSharp.fluid}
+    />
+    <PartnersSection
+      siwy={data.siwy.childImageSharp.fixed}
+      cnm={data.cnm.childImageSharp.fixed}
+      ks={data.ks.childImageSharp.fixed}    
+    />
     <BottomWave />
   </Layout>
 )
@@ -114,6 +123,48 @@ export const query = graphql`
     techniki: file(relativePath: { eq: "techniki-osteopatyczne.jpg"}) {
       childImageSharp {
         fixed(height: 88) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    bartek: file(relativePath: { eq: "bartosz-burzynski-new.jpg"}) {
+      childImageSharp {
+        fixed(width: 180) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    lila: file(relativePath: { eq: "lilianna-jaworska-new.jpg"}) {
+      childImageSharp {
+        fixed(width: 180) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    gabinet: file(relativePath: { eq: "biuro.png"}) {
+      childImageSharp {
+        fluid(maxHeight: 550) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    siwy: file(relativePath: { eq: "siwy.png"}) {
+      childImageSharp {
+        fixed(height: 120) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    cnm: file(relativePath: { eq: "cnm.jpg"}) {
+      childImageSharp {
+        fixed(height: 120) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    ks: file(relativePath: { eq: "kspolonia.jpg"}) {
+      childImageSharp {
+        fixed(height: 120) {
           ...GatsbyImageSharpFixed
         }
       }

@@ -1,12 +1,10 @@
 import React from "react";
 import { SectionTitle } from "./SectionTitle";
-
-import bartek from "../images/bartosz-burzynski-new.jpg";
-import lila from "../images/lilianna-jaworska-new.jpg";
+import Img from "gatsby-image";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-export const PoznajNasSection = () => {
+export const PoznajNasSection = ({ bartek, lila }) => {
   return (
     <ScrollAnimation animateIn="fadeIn">
       <section className="bg-white py-8" id="o-nas">
@@ -23,7 +21,7 @@ export const PoznajNasSection = () => {
             </div>
             <div className="w-full sm:w-1/3 p-6  justify-center flex">
               <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
-                <img src={bartek} className="h-full w-full" />
+                <Img fixed={bartek} className="h-full w-full" />
               </div>
             </div>
           </div>
@@ -36,7 +34,7 @@ export const PoznajNasSection = () => {
             </div>
             <div className="w-full sm:w-1/3 p-6 justify-center flex">
               <div className="inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40">
-                <img src={lila} className="h-full w-full" />
+                <Img fixed={lila} className="h-full w-full" />
               </div>
             </div>
           </div>
