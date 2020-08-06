@@ -1,9 +1,7 @@
 import React from "react";
+import Img from "gatsby-image/withIEPolyfill";
 
-import burzynscy from "../images/burzynscy.png";
-
-
-export const Wave = () => {
+export const Wave = ({ image }) => {
   return (
     <>
       <div
@@ -21,8 +19,8 @@ export const Wave = () => {
             <a class="mx-4 hover:underline bg-white text-gray-900 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#o-nas">O nas</a>
           </div>
         </div>
-        <div className="flex-1 md:m-0 my-3">
-          <img src={ burzynscy } style={{ maxHeight: "50vh" }} className="m-0" />
+        <div className="flex-1 md:m-0 my-3 w-full">
+          <Img fluid={ image } style={{ minHeight: "40vh", maxHeight: "50vh", height: "40vw", objectFit: "contain" }} className="m-4" objectFit="contain" />
         </div>
       </div>
       <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 90 1440 160">

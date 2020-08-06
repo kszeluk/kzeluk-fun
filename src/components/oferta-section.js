@@ -3,11 +3,7 @@ import React from "react";
 import { CrookedTile } from "./crooked-tile"
 import { SectionTitle } from "./SectionTitle"
 
-import pourazowe from "../images/stany-pourazowy.jpg";
-import kregoslup from "../images/bole-kregoslupa.jpg";
-import reum from "../images/choroby-reumatyczne.jpg"
-
-export const OfertaSection = () => {
+export const OfertaSection = ({ pourazowe, kregoslup, reumatyczne }) => {
   return (
     <section className="py-8 border-b" id="oferta">
       <SectionTitle
@@ -30,7 +26,7 @@ export const OfertaSection = () => {
             <CrookedTile
               title="CHOROBY REUMATYCZNE"
               description="Objawiają się zmianami w obrębie stawów i kości, powodując ból."
-              img={reum}
+              img={reumatyczne}
               delay={400}
             />
           </div>

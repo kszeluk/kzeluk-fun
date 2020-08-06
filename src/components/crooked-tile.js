@@ -1,15 +1,23 @@
 import React from "react";
+import Img from "gatsby-background-image";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
 export const CrookedTile = ({ img, title, description, delay }) => {
   return (
     <ScrollAnimation className="relative rounded-lg block sm:flex items-center bg-gray-100 shadow-xl md:mx-3 flex-1 my-4" style={{ minHeight: "10rem" }} delay={delay} animateIn="zoomIn">
-      <div className="relative w-full lg:w-3/7 h-full overflow-hidden rounded-t-lg lg:rounded-t-none lg:rounded-l-lg" style={{ minHeight: "10rem" }}>
-        <img className="absolute inset-0 w-full h-full object-cover object-center" src={ img } alt="" />
+      <div className="flex relative flex-1 self-stretch">
+        <Img
+          className="absolute flex flex-1 self-stretch h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg"
+          style={{ minHeight: "10rem" }}
+          fluid={ img }
+          alt=""
+          objectFit="cover"
+          objectPosition="center"
+        />
       </div>
-      <div className="w-full lg:w-4/7 h-full flex items-center bg-gray-100 rounded-lg">
-        <div className="p-6 lg:p-3 lg:pr-4 lg:pl-5 lg:py-8 h-full">
+      <div className="h-full flex items-center bg-gray-100 rounded-lg" style={{ flex: 2}}>
+        <div className="p-6 md:p-3 md:pr-4 md:pl-5 md:py-8 h-full">
           <h4 className="text-primary">{ title }</h4>
           <p className="text-gray-600">{ description }</p>
         </div>

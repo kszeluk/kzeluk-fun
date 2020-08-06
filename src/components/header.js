@@ -1,15 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import styled from "styled-components";
 import logo from "../images/logo2.png"
 
-
-const LogoTitle = styled.h3`
-  margin: 0;
-  height: 50px;
-  padding: 0;
-  line-height: 50px;
-`;
 
 const Header = ({ siteTitle }) => {
   const navigation = React.createRef();

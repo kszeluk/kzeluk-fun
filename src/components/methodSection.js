@@ -1,17 +1,9 @@
 import React from "react";
-import { Card } from "./card";
-
-import elektroterapia from "../images/elektroterapia.jpg";
-import ultradzwieki from "../images/ultradzwieki.jpg";
-import swiatlo from "../images/terapia-swiatlem.jpg";
-import kinesiology from "../images/kinesiology-taping.jpg";
-import taping from "../images/taping-sztywny.jpg";
-import masaz from "../images/masaz.jpg";
-import techniki from "../images/techniki-osteopatyczne.jpg";
-import logo from "../images/logo.png";
 import ScrollAnimation from "react-animate-on-scroll";
 
-export const MethodSection = () => {
+import { Card } from "./card";
+
+export const MethodSection = ({ elektroterapia, ultradzwieki, swiatlo, kinesiology, taping, masaz, techniki }) => {
   return (
     <ScrollAnimation animateIn="fadeIn">
       <section className="bg-gray-100 py-8 border-b" id="nasze-metody">
