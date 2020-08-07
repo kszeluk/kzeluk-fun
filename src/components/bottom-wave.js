@@ -66,7 +66,7 @@ export const BottomWave = () => {
               </div>
             </a>
             <div className="flex w-full my-4 justify-center md:justify-start">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1368.121239786284!2d17.0440813766981!3d51.11985702694367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9dad8cc44ab%3A0xf2af6181b250a710!2sUlica%20Boles%C5%82awa%20Prusa%2038%2F40%2C%2050-319%20Wroc%C5%82aw!5e0!3m2!1spl!2spl!4v1596654484057!5m2!1spl!2spl" width="400" height="300" frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.3884543684667!2d17.043078616031732!3d51.119742446793026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a81ea8b4dfccd%3A0xe71fe6395fbd86d1!2sCentrum%20Rehabilitacji!5e0!3m2!1spl!2spl!4v1596785400375!5m2!1spl!2spl" width="400" height="300" frameborder="0" style={{ border:0 }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
         </div>

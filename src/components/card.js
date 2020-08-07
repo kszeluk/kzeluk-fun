@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 export const Card = ({ title, description, img }) => {
   return (
-    <div className="md:mx-2 mb-4 md:mb-0 flex-1 py-4">
+    <div className="mx-auto md:mx-2 mb-4 md:mb-0 flex-1 py-4">
       <div className="flex max-w-md overflow-hidden h-full">
         <div className="w-1/3 flex items-start mt-2">
           <Img fixed={img} className="m-0" />
