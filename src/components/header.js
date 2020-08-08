@@ -1,5 +1,7 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
+import { Link } from "react-scroll";
+
 import logo from "../images/logo2.png"
 
 
@@ -49,36 +51,60 @@ const Header = ({ siteTitle }) => {
           <div
             className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto"
           >
-            <a
-              href="#oferta"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white"
+            <Link
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white cursor-pointer"
+              activeClass="font-bold"
+              to="oferta"
+              spy={true}
+              smooth={true}
+              offset={-48}
+              duration={500}
             >
-              <span>Oferta</span>
-            </a>
-            <a
-              href="#nasze-metody"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white"
+              Oferta
+            </Link>
+            <Link
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white cursor-pointer"
+              activeClass="font-bold"
+              to="nasze-metody"
+              spy={true}
+              smooth={true}
+              offset={-48}
+              duration={500}
             >
-              <span>Nasze metody</span>
-            </a>
-            <a
-              href="#o-nas"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white"
+              Nasze metody
+            </Link>
+            <Link
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white cursor-pointer"
+              activeClass="font-bold"
+              to="o-nas"
+              spy={true}
+              smooth={true}
+              offset={-48}
+              duration={500}
             >
-              <span>O nas</span>
-            </a>
-            <a
-              href="#kontakt"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white"
+              O nas
+            </Link>
+            <Link
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white cursor-pointer"
+              activeClass="font-bold"
+              to="kontakt"
+              spy={true}
+              smooth={true}
+              offset={-48}
+              duration={500}
             >
-              <span>Kontakt</span>
-            </a>
-            <a
-              href="#kontakt"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white"
+              Kontakt
+            </Link>
+            <Link
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white cursor-pointer"
+              to="kontakt"
+              spy={true}
+              smooth={true}
+              offset={-48}
+              duration={500}
             >
-              <span>Umów wizytę</span>
-            </a>
+              Umów wizytę
+            </Link>
           </div>
         </div>
       </nav>
