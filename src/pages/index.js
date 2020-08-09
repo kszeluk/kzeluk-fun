@@ -12,39 +12,72 @@ import { GabinetSection } from "../components/gabinetSection"
 import { BottomWave } from "../components/bottom-wave"
 import { PartnersSection } from "../components/partnerzySection"
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO />
-    <Wave image={data.wave.childImageSharp.fluid} />
-    <OfertaSection
-      pourazowe={data.pourazowe.childImageSharp.fluid}
-      kregoslup={data.kregoslup.childImageSharp.fluid}
-      reumatyczne={data.reumatyczne.childImageSharp.fluid}
-    />
-    <MethodSection
-      elektroterapia={data.elektroterapia.childImageSharp.fixed}
-      ultradzwieki={data.ultradzwieki.childImageSharp.fixed}
-      swiatlo={data.swiatlo.childImageSharp.fixed}
-      kinesiology={data.kinesiology.childImageSharp.fixed}
-      taping={data.taping.childImageSharp.fixed}
-      masaz={data.masaz.childImageSharp.fixed}
-      techniki={data.techniki.childImageSharp.fixed}
-    />
-    <PoznajNasSection
-      bartek={data.bartek.childImageSharp.fixed}
-      lila={data.lila.childImageSharp.fixed}    
-    />
-    <GabinetSection
-      biuro={data.gabinet.childImageSharp.fluid}
-    />
-    <PartnersSection
-      siwy={data.siwy.childImageSharp.fixed}
-      cnm={data.cnm.childImageSharp.fixed}
-      ks={data.ks.childImageSharp.fixed}    
-    />
-    <BottomWave />
-  </Layout>
-)
+
+const fbPlugin = `
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v8.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="125110155672948"
+  logged_in_greeting="Hej! W czym możemy Ci pomóc?"
+  logged_out_greeting="Hej! W czym możemy Ci pomóc?">
+  </div>
+`;
+
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO />
+      <Wave image={data.wave.childImageSharp.fluid} />
+      <OfertaSection
+        pourazowe={data.pourazowe.childImageSharp.fluid}
+        kregoslup={data.kregoslup.childImageSharp.fluid}
+        reumatyczne={data.reumatyczne.childImageSharp.fluid}
+      />
+      <MethodSection
+        elektroterapia={data.elektroterapia.childImageSharp.fixed}
+        ultradzwieki={data.ultradzwieki.childImageSharp.fixed}
+        swiatlo={data.swiatlo.childImageSharp.fixed}
+        kinesiology={data.kinesiology.childImageSharp.fixed}
+        taping={data.taping.childImageSharp.fixed}
+        masaz={data.masaz.childImageSharp.fixed}
+        techniki={data.techniki.childImageSharp.fixed}
+      />
+      <PoznajNasSection
+        bartek={data.bartek.childImageSharp.fixed}
+        lila={data.lila.childImageSharp.fixed}    
+      />
+      <GabinetSection
+        biuro={data.gabinet.childImageSharp.fluid}
+      />
+      <PartnersSection
+        siwy={data.siwy.childImageSharp.fixed}
+        cnm={data.cnm.childImageSharp.fixed}
+        ks={data.ks.childImageSharp.fixed}    
+      />
+      <BottomWave />
+      <div dangerouslySetInnerHTML={{
+        __html: fbPlugin
+      }}/>
+    </Layout>
+  );
+}
 
 export default IndexPage
 
